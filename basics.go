@@ -63,7 +63,7 @@ func (m model_b) View() string {
 		}
 		//is choice selected?
 		checked := " "
-		if _, ok := m.selected[i]; ok {
+		if _, ok := m.selected[i]; ok { //if the map has i as a key, then we know we selected the option previously
 			checked = "x" //selected!
 		}
 		s += fmt.Sprintf("%s [%s] %s\n", cursor, checked, choice)
